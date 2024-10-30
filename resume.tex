@@ -37,12 +37,13 @@
 \nobibliography{cv}
 
     % Contact Information
-    \section{\mysidestyle Contact\\Information}
-    Graduate Research Assistant \hfill mobile: (708) 567-0002 \vspace{0mm}\\\vspace{0mm}%
-        \textsl{University of Illinois, Urbana-Champaign}
-        \hfill e-mail: \href{mailto:nathanryan.nuc@gmail.com}{nathanryan.nuc@gmail.com}       \vspace{0mm}\\\vspace{0mm}%
-    \textsl{Nuclear, Plasma, and Radiological Engineering}
-        \hfill website: \href{https://nsryan.github.io}{nsryan.github.io}     \vspace{0mm}\\\vspace{0mm}%
+    \section{\mysidestyle Contact}
+    mobile: (708) 567-0002 \hfill e-mail: \href{mailto:nathanryan.nuc@gmail.com}{nathanryan.nuc@gmail.com} \hfill website: \href{https://nsryan.github.io}{nsryan.github.io} \vspace{0mm}\\\vspace{1mm}%
+    % Graduate Research Assistant \hfill mobile: (708) 567-0002 \vspace{0mm}\\\vspace{0mm}%
+    %     \textsl{University of Illinois, Urbana-Champaign}
+    %     \hfill e-mail: \href{mailto:nathanryan.nuc@gmail.com}{nathanryan.nuc@gmail.com}       \vspace{0mm}\\\vspace{0mm}%
+    % \textsl{Nuclear, Plasma, and Radiological Engineering}
+    %     \hfill website: \href{https://nsryan.github.io}{nsryan.github.io}     \vspace{0mm}\\\vspace{0mm}%
     %\textsl{Affiliate Faculty, National Center for Supercomputing Applications}           \vspace{0mm}\\\vspace{0mm}%
     %\textsl{Affiliate Faculty, Computational Science and Engineering}           \vspace{0mm}\\\vspace{-4.5mm}%
 
@@ -52,9 +53,10 @@
                 %Seeking research and teaching opportunities in nuclear engineering and scientific computation.%
     %__________________________________________________________________________________________________________________
     % Research Interests
+    \vspace{-6mm}
     \section{\mysidestyle Research\\Interests}
                 Nuclear fuel cycle simulation and analysis,
-                energy system modeling, environmental justice, decommissioning, and
+                energy system modeling, energy regulation, nuclear energy policy, environmental justice, decommissioning, and
                 scientific computation.
                 %
     %__________________________________________________________________________________________________________________
@@ -71,19 +73,41 @@
     %     \item Advisor:  Dr. Madicken Munk
     % \end{list2}\vspace{-1.5mm}
     \section{\mysidestyle MS}
-    \textbf{University of Illinois Urbana-Champaign}, \textsc{Nuclear, Plasma, and Radiological Engineering}\hfill\textbf{Aug 2022 -- est. May 2024}\vspace{-3mm}\\\vspace{-1mm}%
-    \vspace{-1.5mm}
+    \textbf{University of Illinois Urbana-Champaign},\hfill\textbf{Aug 2022 -- est. Dec 2024}\\
+    \textsc{Nuclear, Plasma, and Radiological Engineering}\\
+    % \begin{list2}
+    %     \item Thesis: \emph{Optimization of Nuclear Fuel Cycle Transition Scenarios}
+    %     \item Committee: Dr. Madicken Munk, Dr. Kathryn Huff
+    % \end{list2}\vspace{-1.5mm}
+    \vspace{-5.5mm}
     \section{\mysidestyle BS}
     \textbf{University of Illinois Urbana-Champaign}, \textsc{Engineering Physics}\hfill\textbf{Aug 2019 -- Aug 2022}\vspace{-3mm}\\\vspace{-1mm}%
     \vspace{-1.5mm}
     %__________________________________________________________________________________________________________________
-    % Research Experience
-    \section{\mysidestyle Research\\Experience}
-    \textbf{University of Illinois at Urbana-Champaign}, Urbana, IL\\
-                \textsl{Graduate Research Assistant, Nuclear Plasma and Radiological Engineering} \hfill \textbf{Aug 2022 -- Present}\\
-                \textsl{Undergraduate Research Assistant} \hfill \textbf{May 2020 -- Aug 2022}\\
-                \textsl{Advanced Reactors and Fuel Cycles group}\\
-                In my capacity as a researcher, my focus has been on energy system modeling and analysis for non-energy applications of nuclear power plants and nuclear fuel cycle analysis of transition scenarios for advanced TRISO-fueled reactors.
+
+% Research Experience
+\section{\mysidestyle Research\\Experience}
+\textbf{University of Illinois at Urbana-Champaign}, Urbana, IL \hfill \textbf{Aug 2022 -- Present} \\
+\textsl{Graduate Research Assistant, Nuclear, Plasma, and Radiological Engineering} \\
+\begin{itemize}
+    \item Extended the Cyclus nuclear fuel cycle code to optimize space usage and enhanced core-loading control of assemblies.
+    \item Engineered a rudimentary neural network from scratch and implemented a sophisticated PyTorch model to generate arbitrary-source weight windows for 2D Monte Carlo simulations, trained on my implementation of Legendre polynomial solutions to fixed-source problems.
+    \item Evaluated international and national nuclear fuel cycle transition scenarios from traditional LWR technologies to TRISO fueled nuclear reactors, including separative work unit, energy production, and emissions calculations.
+\end{itemize}
+                \textsl{Undergraduate Research Assistant} \textsl{Advanced Reactors and Fuel Cycles}\hfill \textbf{May 2020 -- Aug 2022}\\
+                % In my capacity as a researcher, my focus has been on energy system modeling and analysis for non-energy applications of nuclear power plants and nuclear fuel cycle analysis of transition scenarios for advanced TRISO-fueled reactors.
+                \begin{itemize}
+                    \item Developed a deep-learning model for energy demand prediction and trained using microgrid data, resulting in enhanced model accuracy up to 7 Lyapunov time constants.
+                    \item Created robust testing suites for two projects using advanced PyTest features and developed Sphinx-based documentation following PEP-8 standards.
+                    \item Edited over 10 abstracts, theses, papers, and presentation materials for clarity, coherence, and academic rigor.
+                    \item Managed licensing for all group-generated code, ensuring compliance with CC-BY 4.0, BSD-3.0, MIT, GPLv3, and LGPLv3 licenses for both new and derivative projects.
+                \end{itemize}
+
+    \textbf{Oak Ridge National Laboratory}, Oak Ridge, TN \hfill \textbf{June 2024 -- August 2024} \\
+    \textsl{Graduate Summer Intern, Research and Test Reactor Physics Group} \\
+    \begin{itemize}
+        \item Integrate enrichment versatility for non-equilibrium reactors into the Cyclus nuclear fuel cycle simulator.
+    \end{itemize}
 
     % \textbf{Argonne National Laboratory}, Argonne, IL \hfill \textbf{Date -- Date}\\
     %             \textsl{Title, group}\\
@@ -136,12 +160,12 @@
     %   \begin{bibenum}
     %   \item \bibentry{}
     %   \end{bibenum}
-
-    % \section{\mysidestyle Journal\\Publications}
+    \vspace{-4mm}
+    \section{\mysidestyle Journal\\Publications}
     % %\section{\mysidestyle Refereed\\Journal\\Publications} % also, vspace below
-    %   \begin{bibenum}
-    %   \item \bibentry{bachmann_enrichment_2021}
-    %   \end{bibenum}
+      \begin{bibenum}
+      \item \bibentry{bachmann_enrichment_2021}
+      \end{bibenum}
 
       %\vspace{2mm} % add this back if you return to Refereed Journal..
       %\section{\mysidestyle Submitted}
@@ -169,6 +193,13 @@
     \section{\mysidestyle Technical\\Reports}
     \begin{bibenum}
        \item \bibentry{dotson_economic_2021}
+    \end{bibenum}
+    %__________________________________________________________________________________________________________________
+    % Poster Presentations
+    \section{\mysidestyle Poster\\Presentations}
+    \begin{bibenum}
+        \item \bibentry{esom_stuco22}
+        \item \bibentry{ever_ornl2024}
     \end{bibenum}
     %__________________________________________________________________________________________________________________
     % Other Publications
@@ -332,15 +363,15 @@
     % \makebox[0.2\textwidth][l]{Year}
     % \hfill Degree--Institution\\
 
-    %__________________________________________________________________________________________________________________
+   %__________________________________________________________________________________________________________________
     % Computer Skills
-    % \section{\mysidestyle Scientific\\Computing\\Skills}
-    %             \textbf{Languages} \hfill bash, C++, Python\vspace{.5mm}\\%
-    %             \textbf{Build Systems} \hfill make, CMake\vspace{.5mm}\\%
-    %             \textbf{Databases} \hfill SQL\vspace{.5mm}\\%
-    %             \textbf{Test Frameworks} \hfill PyTest\vspace{.5mm}\\%
-    %             \textbf{Version Control} \hfill git\vspace{.5mm}\\%
-    %             \textbf{Other Tools} \hfill Sphinx, \LaTeX, Mathematica\vspace{.5mm}%
+    \section{\mysidestyle Skills}
+                \textbf{Coding Languages} \hfill bash, C++, Python, html, css, \LaTeX, BibTeX \vspace{.5mm}\\%
+                \textbf{Build Systems} \hfill make, CMake\vspace{.5mm}\\%
+                \textbf{Databases} \hfill SQL, SQLite\vspace{.5mm}\\%
+                \textbf{Test Frameworks} \hfill PyTest\vspace{.5mm}\\%
+                \textbf{Version Control} \hfill git\vspace{.5mm}\\%
+                \textbf{Applications} \hfill Sphinx, Mathematica, PyTorch, Word, Excel, Powerpoint, cPanel\vspace{.5mm}%
     %__________________________________________________________________________________________________________________
     % Professional, Student Organizations
 
@@ -365,17 +396,27 @@
     %                         \mbox{}~\hfill\emph{Alfred P. Sloan Foundation}\vspace{2mm}\\%
     % \textbf{Book Proposal Referee} \hfill\emph{O'Reilly Media}\\%
     %                         \mbox{}\hfill\emph{Elsevier}\vspace{2mm}\\%
-
     \section{\mysidestyle Professional\\Service}
-    \textbf{Delegate}, Nuclear Engineering Student Delegation (NESD) \hfill \textbf{2023}\vspace{.5mm}\\%
-    On NESD I will work to develop a policy statement for nuclear science research and education funding. We will then communicate this statement with a variety of NGO and elected representatives. \\
+    \textbf{Delegate}, Nuclear Engineering Student Delegation (NESD) \hfill \textbf{2023, 2024}\vspace{.5mm}\\%
+    \begin{itemize}
+        \item Developed policy statements covering the Nuclear Energy University Program (NEUP), regulatory reform, fuel cycle commercialization, trade programs, waste management, and international competition.
+        \item Communicate the delegations vision with elected officials, non-governmental organizations, and commercial stakeholders in the nuclear industry.
+    \end{itemize}
     % \textbf{Vice Chair}, Student Sections Committee, ANS \hfill \textbf{2023--present}\vspace{.5mm}\\%
     % \textbf{Chair}, Student Conference Finance Subcommittee, ANS \hfill \textbf{2022-2023}\vspace{.5mm}\\%
     %             \textbf{Chair}, Winter Meeting Student Program, ANS \hfill \textbf{2022}\vspace{.5mm}\\%
     \textbf{Organizer}, Young Professionals Congress (YPC), ANS \hfill \textbf{2022--2023}\vspace{.5mm}\\%
-    The Young Professionals Congress is an embedded topical meeting focused on young professional's issues and concerns in nuclear science. In my capacity on YPC I developed a plenary about equitable transitions for former coal and natural gas communities in addition to more administrative efforts. \\
+    % The Young Professionals Congress is an embedded topical meeting focused on young professional's issues and concerns in nuclear science. In my capacity on YPC I developed a plenary about equitable transitions for former coal and natural gas communities in addition to administrative efforts to ensure the success of the topical. \\
+    \begin{itemize}
+        \item Developed a plenary about equitable transitions for former coal and natural gas communities.
+        \item Curated the raffles, games, and professional development opprotunities for attendees.
+    \end{itemize}
     \textbf{Public Relations Officer}, U. Illinois ANS student section  \hfill \textbf{2020--2022}\vspace{.5mm}\\%
-    In my capacity as PR officer, I coordinated efforts to introduce and pass two pieces of clean energy legislation in the state of Illinois. In 2021 I coordinated phone banking, letter writing, and virtual meeting campaigns in support of what was the Climate Union Jobs Act which became the Climate and Equitable Jobs Act before it was signed into law. Recently, I worked to support the end to our moratorium on new nuclear energy projects in Illinois.\\
+    % In my capacity as PR officer, I coordinated efforts to introduce and pass two pieces of clean energy legislation in the state of Illinois. In 2021 I coordinated phone banking, letter writing, and virtual meeting campaigns in support of what was the Climate Union Jobs Act which became the Climate and Equitable Jobs Act before it was signed into law. Recently, I worked to support the end to our moratorium on new nuclear energy projects in Illinois.\\
+    \begin{itemize}
+        \item Coordinated phone banking, letter writing, and virtual meeting campaigns in support of the current fleet of reactors in Illinois and the end of Illinois' new nuclear moratorium.
+        \item Developed and maintained relationships with local industry and state elected officials to advocate for nuclear energy and create professional development opportunities for our membership.
+    \end{itemize}
     % \textbf{Coordinator}, Engineering Outreach Bureau, Grainger Engineering Council \hfill \textbf{2020--2022}\vspace{.5mm}\\%
                 % \textbf{Media Coordinator}, 2022 ANS Student Conference \hfill \textbf{2019--2022}\vspace{.5mm}\\%
     %__________________________________________________________________________________________________________________
@@ -398,19 +439,21 @@
 
     %__________________________________________________________________________________________________________________
     % Invited Talks
-    \section{\mysidestyle Invited\\Talks}
-    %\textbf{}, <++>, \emph{<++>}.  \hfill\textbf{<+mo+> <+date+>, <+yy+>}\\
+    % \vspace{-6mm}
+    % \section{\mysidestyle Invited\\Talks}
+    % %\textbf{}, <++>, \emph{<++>}.  \hfill\textbf{<+mo+> <+date+>, <+yy+>}\\
 
-    %\textbf{Organization}, Title \emph{Role}.  \hfill\textbf{month/date, year}\\
-    \textbf{ANS}, Social Media for Local and Student Section Members Webinar \emph{Panel} \hfill\textbf{August 3, 2023}\\
-    \textbf{Memphis Rise Academy}, Careers in Nuclear \emph{Panel} \hfill\textbf{May 31, 2023}\\
-    \textbf{U. Tennessee, Knoxville}, Navigating Conversations with Advisors,  \hfill\textbf{April 14, 2023}\\
-    Managers, and Supervisors, \emph{Panel}.\\
-    % \textbf{ANS U. Illinois}, How to Present at a Conference, \emph{Invited Talk}.  \hfill\textbf{March 13, 2023}\\
-    % \textbf{ANS U. Illinois}, How to Create a Conference Abstract, \emph{Invited Talk}.  \hfill\textbf{Jan 23, 2023}\\
-    \textbf{U. Illinois}, Physics and Astronomy Convocation, \emph{Student Remarks}.  \hfill\textbf{May 15, 2022}\\
-    % \textbf{Tinley Park High School}, Introduction to Nuclear Science \& Careers, \emph{Seminar}.  \hfill\textbf{Jan 17, 2020}\\
-    \textbf{TEDxYouth}, Evolutionary Anthropology and Youth in Science, \emph{Invited Speaker}.\hfill\textbf{Feb 15, 2019}\\
+    % %\textbf{Organization}, Title \emph{Role}.  \hfill\textbf{month/date, year}\\
+    % \textbf{Institute for Genomic Biology}, Setting Boundaries in Graduate School, \emph{Panel}. \hfill \textbf{Aug 24, 2023}\\
+    % \textbf{ANS}, Social Media for Local and Student Section Members Webinar \emph{Panel} \hfill\textbf{August 3, 2023}\\
+    % \textbf{Memphis Rise Academy}, Careers in Nuclear \emph{Panel} \hfill\textbf{May 31, 2023}\\
+    % \textbf{U. Tennessee, Knoxville}, Navigating Conversations with Advisors,  \hfill\textbf{April 14, 2023}\\
+    % Managers, and Supervisors, \emph{Panel}.\\
+    % % \textbf{ANS U. Illinois}, How to Present at a Conference, \emph{Invited Talk}.  \hfill\textbf{March 13, 2023}\\
+    % % \textbf{ANS U. Illinois}, How to Create a Conference Abstract, \emph{Invited Talk}.  \hfill\textbf{Jan 23, 2023}\\
+    % \textbf{U. Illinois}, Physics and Astronomy Convocation, \emph{Student Remarks}.  \hfill\textbf{May 15, 2022}\\
+    % % \textbf{Tinley Park High School}, Introduction to Nuclear Science \& Careers, \emph{Seminar}.  \hfill\textbf{Jan 17, 2020}\\
+    % \textbf{TEDxYouth}, Evolutionary Anthropology and Youth in Science, \emph{Invited Speaker}.\hfill\textbf{Feb 15, 2019}\\
     %__________________________________________________________________________________________________________________
     % Consulting
     % \section{\mysidestyle Consulting}
