@@ -1,0 +1,145 @@
+%______________________________________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Nathan S. Ryan
+
+\documentclass[margin,line]{resume}
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage[breaklinks]{hyperref}
+\def\UrlBreaks{\do\/\do-}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+\usepackage{doi}
+\hypersetup{
+    colorlinks=true,%
+    linkcolor=blue,%
+    filecolor=magenta,%
+    urlcolor=cyan,%
+    breaklinks=true
+}
+\urlstyle{same}
+\usepackage{xspace}
+%\textheight=10.75in
+\newcommand{\Cyclus}{\textsc{Cyclus}\xspace}%
+
+% Trying to bold my name in the bib
+\usepackage{xstring}
+\def\FormatName#1{%
+  \IfSubStr{#1}{Ryan}{\textbf{#1}}{#1}%
+}
+
+
+%______________________________________________________________________________________________________________________
+\begin{document}
+\name{\Large Nathan S. Ryan}
+\begin{resume}
+
+%\bibliographystyle{katyunsrt}
+\bibliographystyle{abbrvurl-huff}
+\nobibliography{cv}
+
+    % Contact Information
+    \section{\mysidestyle Contact}
+    mobile: (708) 567-0002 \hfill e-mail: \href{mailto:nathanryan.nuc@gmail.com}{nathanryan.nuc@gmail.com} \hfill website: \href{https://nsryan.github.io}{nsryan.github.io} \vspace{0mm}\\\vspace{1mm}%
+
+    %__________________________________________________________________________________________________________________
+    % Research Interests
+    \vspace{-6mm}
+    \section{\mysidestyle Objective}
+                Passionate and strategic communicator with extensive experience in energy systems, policy advocacy, and technical communication. Adept at translating complex scientific topics into compelling narratives for diverse audiences. Seeking to leverage my leadership skills, technical expertise, and commitment to clean energy and social justice as a Strategic Communications Manager at Good Energy Collective.
+                %
+    %__________________________________________________________________________________________________________________
+    % Computer Skills
+    \section{\mysidestyle Key\\Skills}
+        \textbf{Strategic Communications} Skilled in creating and executing communication strategies that align with organizational goals and resonate with diverse stakeholders.\vspace{1mm}\\
+        \textbf{Editorial Guidance} Experience in managing publication cycles, setting editorial standards, and ensuring consistency in messaging across platforms.\vspace{1mm}\\
+        \textbf{Policy Advocacy} Expertise in developing policy statements and communications that advance clean energy, environmental justice, and equity.\vspace{1mm}\\
+        \textbf{Content Creation} Proficient in writing and editing for digital platforms, newsletters, press releases, and public statements.\vspace{1mm}\\
+        \textbf{Stakeholder Engagement} Experience building relationships with policymakers, partners, and the media to advance advocacy efforts and amplify organizational voices.\vspace{1mm}\\
+        \textbf{Project Management} Experienced in managing cross-departmental projects, coordinating teams, and tracking performance metrics to improve engagement.\vspace{1mm}\\
+        \textbf{Technical Communication} Translating complex scientific and technical concepts into accessible, impactful narratives.\vspace{1mm}
+    %__________________________________________________________________________________________________________________
+    % Education
+    \section{\mysidestyle MS}
+    \textbf{University of Illinois Urbana-Champaign},\hfill\textbf{Aug 2022 -- est. Dec 2024}\\
+    \textsc{Nuclear, Plasma, and Radiological Engineering}\\
+    % \begin{list2}
+    %     \item Thesis: \emph{Optimization of Nuclear Fuel Cycle Transition Scenarios}
+    %     \item Committee: Dr. Madicken Munk, Dr. Kathryn Huff
+    % \end{list2}\vspace{-1.5mm}
+    \vspace{-5.5mm}
+    \section{\mysidestyle BS}
+    \textbf{University of Illinois Urbana-Champaign},\hfill\textbf{Aug 2019 -- Aug 2022}\\%
+    \textsc{Engineering Physics}\\
+    \vspace{-5mm}
+    %__________________________________________________________________________________________________________________
+
+    % Research Experience
+    \section{\mysidestyle Research\\Experience}
+    \textbf{University of Illinois at Urbana-Champaign}, Urbana, IL \hfill \textbf{Aug 2022 -- Present} \\
+    \textsl{Graduate Research Assistant, Nuclear, Plasma, and Radiological Engineering} \\
+    \begin{itemize}
+        \item Developed and communicated complex findings from nuclear energy research to diverse audiences, including policymakers and industry stakeholders.
+        \item Led outreach efforts to promote understanding of nuclear fuel cycle transition scenarios and clean energy technologies.
+        \item Authored technical reports and publications, ensuring clarity and accessibility for both technical and non-technical audiences.
+    \end{itemize}
+
+    \textsl{Undergraduate Research Assistant} \textsl{Advanced Reactors and Fuel Cycles}\hfill \textbf{May 2020 -- Aug 2022}\\
+    \begin{itemize}
+        \item Collaborated with faculty to communicate the impact of nuclear energy policy and regulatory changes to students and external partners.
+        \item Led the development of technical documents, ensuring all materials were clear, coherent, and aligned with academic rigor.
+        \item Supported the creation of educational resources and presentations for public outreach events and policy discussions.
+    \end{itemize}
+
+    \textbf{Oak Ridge National Laboratory}, Oak Ridge, TN \hfill \textbf{June 2024 -- August 2024} \\
+    \textsl{Graduate Summer Intern, Research and Test Reactor Physics Group} \\
+    \begin{itemize}
+        \item Worked with cross-functional teams to translate research outcomes into actionable policy insights, adapting existing codes to better simulate advanced reactor technologies.
+        \item Enhanced communication of research results through technical presentations and reports for internal and external stakeholders and developed a framework to translate model outputs into recommendations for stakeholders.
+    \end{itemize}
+
+%__________________________________________________________________________________________________________________
+    \vspace{-4mm}
+    \section{\mysidestyle Publications}
+    % %\section{\mysidestyle Refereed\\Journal\\Publications} % also, vspace below
+
+    \begin{bibenum}
+        \item \bibentry{ever_ornl2024}
+        \item \bibentry{esom_stuco22}
+        \item \bibentry{bachmann_enrichment_2021}
+        \item \bibentry{dotson_economic_2021}
+    \end{bibenum}
+
+    %__________________________________________________________________________________________________________________
+    % Professional, Student Organizations
+    \section{\mysidestyle Professional\\Service}
+    \textbf{Delegate}, Nuclear Engineering Student Delegation (NESD) \hfill \textbf{2023, 2024}\vspace{.5mm}\\%
+    \begin{itemize}
+        \item Developed 2 policy statements covering the Nuclear Energy University Program (NEUP), regulatory reform, fuel cycle commercialization, trade programs, waste management, and international competition.
+        \item Communicated the delegation's vision of nuclear with elected officials, non-governmental organizations, and commercial stakeholders in the industry.
+    \end{itemize}
+
+    \textbf{Organizer}, Young Professionals Congress (YPC), ANS \hfill \textbf{2022--2023}\vspace{.5mm}\\%
+    \begin{itemize}
+        \item Developed a plenary about equitable transitions for former coal and natural gas communities.
+        \item Created communication strategies to promote inclusive and engaging policy discussions for attendees in the nuclear energy sector.
+    \end{itemize}
+
+    \textbf{Public Relations Officer}, U. Illinois ANS student section  \hfill \textbf{2020--2022}\vspace{.5mm}\\%
+    \begin{itemize}
+        \item Coordinated phone banking, letter writing, and virtual meeting campaigns in support of the current fleet of reactors in Illinois and the end of Illinois' nuclear moratorium.
+        \item Initiated and maintained relationships with local industry and state elected officials to advocate for nuclear energy and create professional development opportunities for our membership.
+    \end{itemize}
+
+    \textbf{Vice Chair}, ANS Student Sections Committee  \hfill \textbf{2023--2024}\vspace{.5mm}\\%
+    \begin{itemize}
+        \item Collaborated on strategic communication initiatives to engage students and young professionals in nuclear energy policy.
+        \item Managed outreach programs to strengthen connections between students and technical divisions within ANS.
+    \end{itemize}
+
+\end{resume}
+
+\end{document}
+
+
+%______________________________________________________________________________________________________________________
+% EOF
+

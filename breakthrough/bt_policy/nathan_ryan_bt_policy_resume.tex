@@ -1,0 +1,152 @@
+%______________________________________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Nathan S. Ryan
+
+\documentclass[margin,line]{resume}
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage[breaklinks]{hyperref}
+\def\UrlBreaks{\do\/\do-}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+\usepackage{doi}
+\hypersetup{
+    colorlinks=true,%
+    linkcolor=blue,%
+    filecolor=magenta,%
+    urlcolor=cyan,%
+    breaklinks=true
+}
+\urlstyle{same}
+\usepackage{xspace}
+%\textheight=10.75in
+\newcommand{\Cyclus}{\textsc{Cyclus}\xspace}%
+
+% Trying to bold my name in the bib
+\usepackage{xstring}
+\def\FormatName#1{%
+  \IfSubStr{#1}{Ryan}{\textbf{#1}}{#1}%
+}
+
+
+%______________________________________________________________________________________________________________________
+\begin{document}
+\name{\Large Nathan S. Ryan}
+\begin{resume}
+
+%\bibliographystyle{katyunsrt}
+\bibliographystyle{abbrvurl-huff}
+\nobibliography{cv}
+
+    % Contact Information
+    \section{\mysidestyle Contact}
+    mobile: (708) 567-0002 \hfill e-mail: \href{mailto:nathanryan.nuc@gmail.com}{nathanryan.nuc@gmail.com} \hfill website: \href{https://nsryan.github.io}{nsryan.github.io} \vspace{0mm}\\\vspace{1mm}%
+
+    %__________________________________________________________________________________________________________________
+    % Research Interests
+    \vspace{-6mm}
+    \section{\mysidestyle Objective}
+
+        A highly motivated and technically proficient nuclear engineer, with a strong background in nuclear policy, regulation, and advocacy, seeking to contribute to the Breakthrough Institute’s mission of advancing nuclear energy legislation. Eager to leverage expertise in nuclear energy technologies, regulatory frameworks, and policy analysis to support the development and deployment of new nuclear technologies. Committed to driving legislative change and regulatory reform in the nuclear energy sector, and to promoting the role of nuclear power in achieving a sustainable, clean, and reliable energy future.
+                %
+    %__________________________________________________________________________________________________________________
+    % Computer Skills
+    \section{\mysidestyle Key\\Skills}
+        \textbf{Policy Advocacy} Stakeholder engagement, public relations, government outreach.\vspace{1mm}\\
+        \textbf{Research $\&$ Analysis} Energy policy analysis, environmental regulation, energy modeling.\vspace{1mm}\\
+        \textbf{Strategic Communications} Messaging, campaign development, public speaking, media relations.\vspace{1mm}\\
+        \textbf{Project Management} Cross-functional process development, team coordination, project leadership.\vspace{1mm}\\
+        \textbf{Technical Tools} Word, Powerpoint, Outlook, Excel, Python, PyTorch, Mathematica, SQL, Sphinx, Git.\vspace{1mm}
+    %__________________________________________________________________________________________________________________
+    % Education
+    \section{\mysidestyle MS}
+    \textbf{University of Illinois Urbana-Champaign},\hfill\textbf{Aug 2022 -- est. Jan 2025}\\
+    \textsc{Nuclear, Plasma, and Radiological Engineering}\\
+    % \begin{list2}
+    %     \item Thesis: \emph{Optimization of Nuclear Fuel Cycle Transition Scenarios}
+    %     \item Committee: Dr. Madicken Munk, Dr. Kathryn Huff
+    % \end{list2}\vspace{-1.5mm}
+    \vspace{-5.5mm}
+    \section{\mysidestyle BS}
+    \textbf{University of Illinois Urbana-Champaign},\hfill\textbf{Aug 2019 -- Aug 2022}\\%
+    \textsc{Engineering Physics}\\
+    \vspace{-5mm}
+    %__________________________________________________________________________________________________________________
+
+    % Research Experience
+    \section{\mysidestyle Experience}
+    \textbf{Nuclear Engineering Student Delegation} \hfill \textbf{2023, 2024} \\
+    \textsl{NESD Delegate} \\
+    \begin{itemize}
+        \item Developed policy statements covering the Nuclear Energy University Program (NEUP), regulatory reform, fuel cycle commercialization, trade programs, waste management, and international cooperation.
+        \item Communicated the delegation's vision of nuclear with elected officials, non-governmental organizations, and commercial stakeholders in the industry.
+    \end{itemize}
+
+    \textbf{University of Illinois at Urbana-Champaign}, Urbana, IL \hfill \textbf{Aug 2022 -- Present} \\
+    \textsl{Graduate Research Assistant, Nuclear, Plasma, and Radiological Engineering} \\
+    \begin{itemize}
+        \item Conducted policy analysis and evaluated transition scenarios from traditional LWR reactors to TRISO-fueled reactors, influencing future regulatory considerations.
+        \item Collaborated across technical teams to align policy advocacy with energy modeling and simulations, ensuring research informed real-world restrictions.
+        \item Authored technical reports and publications, ensuring clarity and accessibility for both technical and non-technical audiences.
+    \end{itemize}
+
+    \textsl{Undergraduate Research Assistant} \textsl{Advanced Reactors and Fuel Cycles}\hfill \textbf{May 2020 -- Aug 2022}\\
+    \begin{itemize}
+        \item Collaborated with faculty to communicate the impact of nuclear energy policy and regulatory changes to students and external partners.
+        \item Led the development of technical documents, ensuring all materials were clear, coherent, and aligned with academic rigor.
+        \item Contributed to a deep-learning model for energy demand prediction, driving conversations around energy regulation and policy design.
+    \end{itemize}
+
+    \textbf{Oak Ridge National Laboratory}, Oak Ridge, TN \hfill \textbf{June 2024 -- August 2024} \\
+    \textsl{Graduate Summer Intern, Research and Test Reactor Physics Group} \\
+    \begin{itemize}
+        \item Integrated non-equilibrium reactor enrichment models into the Cyclus fuel cycle simulator, advocating for clean energy innovations in both industry and policy forums.
+        \item Enhanced communication of research results through technical presentations and reports for internal and external stakeholders and developed a framework to translate model outputs into recommendations for stakeholders.
+    \end{itemize}
+
+    \textbf{Computational Resource Access Network} \hfill \textbf{2022 -- Present} \\
+    \textsl{CRANE Director} \\
+    \begin{itemize}
+        \item Fostered collaborations between diverse stakeholders to promote equity in STEM education and computational research, and worked on 501c3 incorporation and grant applications.
+        \item Managed large-scale projects, including securing stipends and resources for students, demonstrating strong project management and cross-departmental coordination skills.
+    \end{itemize}
+%__________________________________________________________________________________________________________________
+    \vspace{-4mm}
+    \section{\mysidestyle Publications}
+    % %\section{\mysidestyle Refereed\\Journal\\Publications} % also, vspace below
+
+    \begin{bibenum}
+        \item \bibentry{ever_ornl2024}
+        \item \bibentry{esom_stuco22}
+        \item \bibentry{bachmann_enrichment_2021}
+        \item \bibentry{dotson_economic_2021}
+    \end{bibenum}
+
+    %__________________________________________________________________________________________________________________
+    % Professional, Student Organizations
+    \section{\mysidestyle Professional\\Service}
+
+    \textbf{Organizer}, Young Professionals Congress (YPC), ANS \hfill \textbf{2022--2023}\vspace{.5mm}\\%
+    \begin{itemize}
+        \item Developed a plenary about equitable transitions for former coal and natural gas communities.
+        \item Created communication strategies to promote inclusive and engaging policy discussions for attendees in the nuclear energy sector.
+    \end{itemize}
+
+    \textbf{Public Relations Officer}, U. Illinois ANS student section  \hfill \textbf{2020--2022}\vspace{.5mm}\\%
+    \begin{itemize}
+        \item Coordinated phone banking, letter writing, and virtual meeting campaigns in support of the current fleet of reactors in Illinois and the end of Illinois' nuclear moratorium.
+        \item Initiated and maintained relationships with local industry and state elected officials to advocate for nuclear energy and create professional development opportunities for our membership.
+    \end{itemize}
+
+    \textbf{Vice Chair}, ANS Student Sections Committee  \hfill \textbf{2023--2024}\vspace{.5mm}\\%
+    \begin{itemize}
+        \item Collaborated on strategic communication initiatives to engage students and young professionals in nuclear energy policy.
+        \item Managed outreach programs to strengthen connections between students and technical divisions within ANS.
+    \end{itemize}
+
+\end{resume}
+
+\end{document}
+
+
+%______________________________________________________________________________________________________________________
+% EOF
+
