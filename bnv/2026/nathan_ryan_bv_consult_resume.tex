@@ -1,0 +1,160 @@
+%______________________________________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Nathan S. Ryan
+
+\documentclass[margin,line]{resume}
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage[breaklinks]{hyperref}
+\def\UrlBreaks{\do\/\do-}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+\usepackage{doi}
+\hypersetup{
+    colorlinks=true,%
+    linkcolor=blue,%
+    filecolor=magenta,%
+    urlcolor=cyan,%
+    breaklinks=true
+}
+\urlstyle{same}
+\usepackage{xspace}
+%\textheight=10.75in
+\newcommand{\Cyclus}{\textsc{Cyclus}\xspace}%
+
+% Trying to bold my name in the bib
+\usepackage{xstring}
+\def\FormatName#1{%
+  \IfSubStr{#1}{Ryan}{\textbf{#1}}{#1}%
+}
+
+
+%______________________________________________________________________________________________________________________
+\begin{document}
+\name{\Large Nathan S. Ryan}
+\begin{resume}
+
+%\bibliographystyle{katyunsrt}
+\bibliographystyle{abbrvurl-huff}
+\nobibliography{cv}
+
+    % Contact Information
+    \section{\mysidestyle Contact}
+    mobile: (708) 567-0002 \hfill e-mail: \href{mailto:nathanryan.nuc@gmail.com}{nathanryan.nuc@gmail.com} \hfill \hfill  \hfill \hspace{0mm}\\\vspace{1mm}%
+    % mobile: (708) 567-0002 \hfill e-mail: \href{mailto:nathanryan.nuc@gmail.com}{nathanryan.nuc@gmail.com} \hfill website: \href{https://nsryan.github.io}{nsryan.github.io} \vspace{0mm}\\\vspace{1mm}%
+
+    %__________________________________________________________________________________________________________________
+    % Research Interests
+    \vspace{-6mm}
+    \section{\mysidestyle Objective}
+        Analytical engineer with experience conducting techno-economic analysis, energy systems modeling, and strategic research for emerging energy technologies. Experienced in developing data-driven insights, collaborating across multidisciplinary teams, and communicating technical findings to diverse stakeholders. Eager to apply a structured, client-focused approach to solving infrastructure and energy challenges.
+                %
+    %__________________________________________________________________________________________________________________
+    % Computer Skills
+    \section{\mysidestyle Key\\Skills}
+        \textbf{Data Analysis $\&$ Research} Quantitative & qualitative analysis, Techno-economic analysis, Energy systems modeling, Supply chain analysis.\vspace{1mm}\\
+        \textbf{Communication} Technical writing, Presentations, Stakeholder engagement, Workshop facilitation.\vspace{1mm}\\
+        \textbf{Project $\&$ Team Collaboration} Technical writing, presentations, stakeholder engagement, cross-functional collaboration.\vspace{1mm}\\
+        \textbf{Technical Skills} Microsoft Office, Python, Machine Learning (PyTorch), SQL, Data Visualization.\vspace{1mm}
+    %__________________________________________________________________________________________________________________
+
+    % Research Experience
+    \section{\mysidestyle Experience}
+    \textbf{Oak Ridge National Laboratory}, Oak Ridge, TN \hfill \textbf{June 2025 -- Present} \\
+    \textsl{Nuclear Fuel Cycle and Advanced Reactor Analyst} \\
+    \begin{itemize}
+        \item Conduct supply chain and techno-economic analyses for advanced nuclear technologies, identifying critical material dependencies and deployment risks.
+        \item Evaluate resource availability, manufacturing capacity, and economic factors to inform technology planning and strategic decision-making.
+        \item Develop analytical frameworks that translate technical research into actionable insights for multidisciplinary stakeholders.
+        \item Collaborate with researchers across technical disciplines to communicate findings through reports and presentations.
+    \end{itemize}
+
+    \textbf{University of Illinois at Urbana-Champaign}, Urbana, IL \hfill \textbf{Aug 2022 -- May 2025} \\
+    \textsl{Graduate Research Assistant, Nuclear, Plasma, and Radiological Engineering} \\
+    \begin{itemize}
+        \item Evaluated hydrogen production and storage pathways for Midwest energy systems, supporting stakeholder engagement and a successful DOE Hydrogen Hub proposal.
+        \item Conducted techno-economic and policy analyses of advanced reactor deployment scenarios to assess regulatory and market implications.
+        \item Developed computational models to evaluate energy system performance and emerging technology integration.
+        \item Authored technical reports, publications, and presentations communicating complex analyses to technical and nontechnical audiences.
+    \end{itemize}
+
+    \textsl{Undergraduate Research Assistant} \textsl{Advanced Reactors and Fuel Cycles}\hfill \textbf{May 2020 -- Aug 2022}\\
+    \begin{itemize}
+        \item Developed machine learning models to analyze energy demand and evaluate renewable energy deployment scenarios.
+        \item Performed quantitative analyses of advanced nuclear fuel cycles and energy systems to support long-term planning studies.
+        \item Collaborated with faculty researchers to communicate technical findings and regulatory implications to external stakeholders.
+    \end{itemize}
+
+    \textbf{Computational Resource Access Network} \hfill \textbf{2022 -- Present} \\
+    \textsl{CRANE Director} \\
+    \begin{itemize}
+        \item Lead a nonprofit organization supporting scientific computing education and computational resource access for students.
+        \item Coordinate partnerships, organizational development, and funding initiatives across academic institutions.
+        \item Manage strategic projects involving grant applications, student stipends, and infrastructure planning.
+    \end{itemize}
+
+    %__________________________________________________________________________________________________________________
+    % Education
+    \section{\mysidestyle MS}
+    \textbf{University of Illinois Urbana-Champaign},\hfill\textbf{Aug 2022 -- May 2025}\\
+    \textsc{Nuclear, Plasma, and Radiological Engineering}\\
+    % \begin{list2}
+    %     \item Thesis: \emph{Optimization of Nuclear Fuel Cycle Transition Scenarios}
+    %     \item Committee: Dr. Madicken Munk, Dr. Kathryn Huff
+    % \end{list2}\vspace{-1.5mm}
+    \vspace{-5.5mm}
+    \section{\mysidestyle BS}
+    \textbf{University of Illinois Urbana-Champaign},\hfill\textbf{Aug 2019 -- Aug 2022}\\%
+    \textsc{Engineering Physics}\\
+    \vspace{-5mm}
+
+%__________________________________________________________________________________________________________________
+    % \vspace{-4mm}
+    % \section{\mysidestyle Publications}
+    % % %\section{\mysidestyle Refereed\\Journal\\Publications} % also, vspace below
+
+    % \begin{bibenum}
+    %     \item \bibentry{ever_ornl2024}
+    %     \item \bibentry{esom_stuco22}
+    %     \item \bibentry{bachmann_enrichment_2021}
+    %     \item \bibentry{dotson_economic_2021}
+    % \end{bibenum}
+
+    %__________________________________________________________________________________________________________________
+    % Professional, Student Organizations
+    \section{\mysidestyle Professional\\Service}
+
+    \textbf{Nuclear Engineering Student Delegation} \hfill \textbf{2023, 2024} \\
+    \textsl{NESD Delegate} \\
+    \begin{itemize}
+        \item Researched and developed policy recommendations on nuclear fuel cycles, licensing, waste management, and international cooperation.
+        \item Presented technical analyses and policy recommendations to congressional offices, industry representatives, and nonprofit organizations.
+        \item Synthesized diverse stakeholder perspectives into consensus recommendations for national energy policy discussions.
+    \end{itemize}
+
+    \textbf{Organizer}, Young Professionals Congress (YPC), ANS \hfill \textbf{2022--2023}\vspace{.5mm}\\%
+    \begin{itemize}
+        \item Organized a national professional development program focused on energy transition, infrastructure, and economic development.
+        \item Coordinated speakers and technical sessions while facilitating discussions among industry, academic, and government participants.
+    \end{itemize}
+
+    \textbf{National Member}, American Nuclear Society \hfill \textbf{2020--Present}\vspace{.5mm}\\%
+    \begin{itemize}
+        \item Held multiple national leadership positions supporting student engagement, conference programming, and professional development.
+        \item Planned technical workshops, conference programming, and outreach initiatives serving students and early-career engineers.
+        \item Collaborated with multidisciplinary teams to strengthen communication between students, universities, and industry.
+    \end{itemize}
+
+    % \textbf{Vice Chair}, ANS Student Sections Committee  \hfill \textbf{2023--2024}\vspace{.5mm}\\%
+    % \begin{itemize}
+    %     \item Collaborated on strategic communication initiatives to engage students and young professionals in nuclear energy policy.
+    %     \item Managed outreach programs to strengthen connections between students and technical divisions within ANS.
+    %     \item I have also been media trained as part of the ANS Rapid Response Task Force to speak/write on various nuclear topics in the media.
+    % \end{itemize}
+
+\end{resume}
+
+\end{document}
+
+
+%______________________________________________________________________________________________________________________
+% EOF
+
